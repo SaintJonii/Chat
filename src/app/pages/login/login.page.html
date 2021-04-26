@@ -12,21 +12,23 @@
 
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Validar usuario</ion-card-subtitle>
+        <ion-card-subtitle>Chat Académico</ion-card-subtitle>
         <ion-card-title>Ingrese sus datos</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>
         <ion-item>
-          <ion-label>Usuario: </ion-label>
-          <ion-input type="text" [(ngModel)]="user"></ion-input>
+          <ion-label position="floating">Usuario </ion-label>
+          <ion-input type="email" [(ngModel)]="user"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label>Contraseña: </ion-label>
+          <ion-label position="floating">Contraseña </ion-label>
           <ion-input type="password" [(ngModel)]="pass"></ion-input>
         </ion-item> 
       </ion-card-content>
-      <ion-button color="primary" expand="block" (click)="login()" >Ingresar</ion-button>
+      <ion-button color="primary" (click)="login()" shape="round" fill="outline" expand="full" >
+        <ion-icon slot="end" name="log-in-outline"></ion-icon>
+        Ingresar</ion-button>
     </ion-card>
 
   </div>
