@@ -7,12 +7,24 @@ const routes: Routes = [
     loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'spinner',
+    loadChildren: () => import('./spinner/spinner.module').then( m => m.SpinnerPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'opciones',
+    loadChildren: () => import('./opciones/opciones.module').then( m => m.OpcionesPageModule)
+  },
+  {
+    path: 'opciones-b',
+    loadChildren: () => import('./opciones-b/opciones-b.module').then( m => m.OpcionesBPageModule)
   }
 ];
 @NgModule({

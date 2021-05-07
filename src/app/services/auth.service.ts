@@ -21,7 +21,7 @@ export class AuthService {
       .then(async resp => {
 
           this.auth.currentUser.then(async token => {
-          this.router.navigateByUrl('home');
+          this.router.navigateByUrl('menu');
         });
       }).catch(function(e) {
         return 1;
