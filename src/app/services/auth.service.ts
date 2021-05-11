@@ -21,7 +21,9 @@ export class AuthService {
       .then(async resp => {
 
           this.auth.currentUser.then(async token => {
-          this.router.navigateByUrl('menu');
+            let user = email.split("@")[0];
+            localStorage.setItem("usuarioActual", user);
+            this.router.navigateByUrl('menu');
         });
       }).catch(function(e) {
         return 1;

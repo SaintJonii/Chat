@@ -294,7 +294,7 @@ ion-toolbar{
 
 ion-content {
   --background:none;
-  background-image:url('../assets/fondo.jpg');
+  background-image:url('../assets/home.png');
    background-size: block;
   background-position: bottom;
   font-family: 'Gloria Hallelujah', cursive;
@@ -324,6 +324,7 @@ ion-content {
 .colorPrincipal{
   background:#FAB301;
   color: #000000;
+  opacity: 0.95;
   border-color: #D2D1D7;
   font-size: 40px;
 }
@@ -331,6 +332,7 @@ ion-content {
 .colorSecundario{
   border-color:#D2D1D7;
   color: #000000;
+  opacity: 0.95;
   background: #ff4848;
   font-size: 60px;
 }
@@ -514,8 +516,17 @@ ion-content {
 
 
 .tituloHeader{
-  margin-right: 10%;
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.tituloHeaderB{
+  font-family: 'Gloria Hallelujah', cursive;
+  color:#ff4848;
+}
+
+.tituloHeaderA{
+  font-family: 'Gloria Hallelujah', cursive;
+  color:#FAB301;
 }
 
 .ionIcon{

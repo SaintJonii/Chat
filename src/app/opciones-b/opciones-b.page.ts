@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class OpcionesBPage implements OnInit {
 
   nombreUsuario: string = "";
+  nombreSala= "PPS-4ºB"
   mensaje: string = "";
   mensajes = new Array<Mensaje>();
   claseActual = "colorTerciario";
