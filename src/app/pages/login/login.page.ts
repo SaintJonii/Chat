@@ -89,4 +89,25 @@ export class LoginPage implements OnInit {
     this.pass = null;
   }
 
+  LoginAdmin(){
+    this.user="admin@admin.com";
+    this.pass="111111";
+  }
+  LoginInvitado(){
+    this.user="invitado@invitado.com";
+    this.pass="222222";
+  }
+  LoginUsuario(){
+    this.user="usuario@usuario.com";
+    this.pass="333333";
+  }
+  LoginAnonimo(){
+    this.user="anonimo@anonimo.com";
+    this.pass="444444";
+  }
+  LoginTester(){
+    this.user="tester@tester.com";
+    this.pass="555555";
+  }
+
 }
